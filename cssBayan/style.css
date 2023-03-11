@@ -83,6 +83,13 @@ body {
   animation: flash 1s;
   transition: 1.2s;
 }
+.accordion-item input[type="radio"]:checked ~ .title {
+  color: rgb(172, 33, 33);
+}
+.accordion-item input[type="radio"]:checked ~ .title::before {
+  color: rgb(255, 255, 255);
+}
+
 .accordion-item input[type="radio"]:hover ~ .panel {
   height: auto;
   visibility: visible;
@@ -111,42 +118,6 @@ body {
   margin: 0 auto;
 }
 
-/* анимация 1 пробная*/
-/* .poster:hover {
-  background: red;
-  animation-name: floating;
-  -webkit-animation-name: floating;
-
-  animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-} */
-
-/* @keyframes floating {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(3%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-} */
-
-/* @-webkit-keyframes floating {
-  0% {
-    -webkit-transform: translateY(0%);
-  }
-  50% {
-    -webkit-transform: translateY(3%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-  }
-} */
 @media (min-width: 1921px) {
   h1 {
     font-size: 4em;
@@ -217,3 +188,4 @@ body {
     background: green;
   } */
 }
+
