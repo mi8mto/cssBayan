@@ -176,11 +176,7 @@ body {
     opacity: 1;
   }
 }
-.div {
-  color: red;
-  width: 30px;
-  height: 30px;
-}
+
 
 @media (hover) {
   /*Поддерживает hover*/
